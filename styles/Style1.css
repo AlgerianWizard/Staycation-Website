@@ -63,3 +63,22 @@ body{
     font-size: 30px;
     font-weight: bold;
 }
+
+.popular_destination h2{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.popular_destination p{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+    border: 5px solid black;
+}
+
+.popular_destination img{
+    display: inline;
+    
+}
