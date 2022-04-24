@@ -3,16 +3,24 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: ;
 }
 
-li, a, button, p, h1{
+
+li, a{
     font-family: Verdana, sans-serif;
     font-weight: 500;
-    font-size:18px;
-    color:#141d44;
+    font-size:24px;
+    color:white;
     text-decoration: none;
+    transition: color .9s ease-in-out, box-shadow .9s ease-in-out;
+
 }
+
+li a:hover {
+    box-shadow: inset 200px 0 0 0 black;
+    color: white;
+  }
+
 
 header{
     display:flex;
@@ -60,7 +68,7 @@ button:hover{
     display: flex;
     justify-content:center;
     align-items:center;
-    font-size: 30px;
+    font-size: 50px;
     font-weight: bold;
 }
 
@@ -107,9 +115,11 @@ button:hover{
     display: flex;
     justify-content:space-evenly;
     align-items: center;
-    text-align: center;
+    text-align:justify;
     flex-direction: column;
-    border:3px solid #141d44;
+}
+.flexbox-container2 h2{
+    text-align: center;
 }
 
 .flexbox-item2{
@@ -127,4 +137,24 @@ button:hover{
 
 .bg{
     background-color: lightblue
+}
+
+.middletext{
+    margin-top:200px;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+.middletext1{
+    min-width: 300px;
+    color: rgb(226, 221, 221);
+}
+
+
+.middletext2{
+    min-width: 300px;
+    color:whitesmoke;
+    margin-right: 40px;
 }
