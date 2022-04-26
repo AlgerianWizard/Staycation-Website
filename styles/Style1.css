@@ -117,7 +117,15 @@ button:hover{
     align-items: center;
     text-align:justify;
     flex-direction: column;
+    border: 2px solid black;
 }
+
+.flexbox-container2 img{
+    justify-content: space-evenly;
+
+}
+
+
 .flexbox-container2 h2{
     text-align: center;
 }
@@ -128,15 +136,26 @@ button:hover{
 }
 
 .flexbox-item2-1{
-    min-height: 300px;
+    min-height: 100px;
 }
 
 .flexbox-item2-2{
-    min-height: 300px;
+    min-height: 100px;
 }
 
-.bg{
-    background-color: lightblue
+body {
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+  
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
 }
 
 .middletext{
@@ -157,4 +176,10 @@ button:hover{
     min-width: 300px;
     color:whitesmoke;
     margin-right: 40px;
+}
+
+.popimg{
+    height: 500px;
+    border: 2px solid black;
+    border-radius: 50px;
 }
