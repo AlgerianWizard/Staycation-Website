@@ -195,3 +195,11 @@ footer{
     margin-bottom: 40px;
     margin-right: 40px;
 }
+
+.flexbox-form-container{
+    display: flex;
+}
+
+.flexbox-form-item1{
+    min-height: 200px;
+}
