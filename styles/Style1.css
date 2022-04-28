@@ -157,7 +157,7 @@ body {
   
 @keyframes fadeInAnimation {
     0% {
-        opacity: 0;
+        opacity: 0.2;
     }
     100% {
         opacity: 1;
@@ -197,7 +197,6 @@ footer{
     justify-content: space-evenly;
     color: black;
     width: 100%;
-    margin-bottom: 40px;
     margin-right: 40px;
 }
 
