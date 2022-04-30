@@ -34,20 +34,28 @@
                         <input type="text" name="fname" id="fname" required><br>
                         <label for="email">Email Address:</label><br>
                         <input type="text" name="email" id="email" required><br>
-                        <label for="query">Query:</label><br>
-                        <textarea required  id="query" name="query" rows="6" cols="50"></textarea><br>
-                        <input type="submit" value="Submit">
-                    </form>
+                        <label for="destination">Destination: </label><br>
+                        <input type="radio" id="destination" name="destination" value="Torquay">
+                        <label for="destination">Torqauy</label><br>
+                        <input type="radio" id="destination" name="destination" value="Eastbourne">
+                        <label for="destination">Eastbourne</label><br>
+                        <input type="radio" id="destination" name="destination" value="Cotswolds">
+                        <label for="destination">Cotswolds</label><br>
+                        <input type="radio" id="destination" name="destination" value="Llandudno">
+                        <label for="destination">Llandudno</label><br>
 
-                    <form id="flight">
-                        <label>
-                          Arrival <br/>
-                          <input type="date" name="arrival" value="Today"/>
-                        </label>
-                       
-                        <label>
-                          Departure <br/>
-                          <input type="date" name="departure" data-value="7" value="After one week"/>
+
+                        
+                        <form id="flight">
+                            <label>
+                                Arrival <br/>
+                                <input type="date" name="arrival" value="Today"/>
+                            </label>
+                            
+                            <label>
+                                Departure <br/>
+                                <input type="date" name="departure" data-value="7" value="After one week"/>
+                                <input type="submit" value="Submit">
                         </label>
                       </form>
                     <br>
