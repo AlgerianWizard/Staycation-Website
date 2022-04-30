@@ -150,9 +150,9 @@ button:hover{
 }
 
 body {
-    animation: fadeInAnimation ease 3s;
+    animation: fadeInAnimation ease 1.5s;
     animation-iteration-count: 1;
-    animation-fill-mode: forwards;
+    animation-fill-mode:forwards
 }
   
 @keyframes fadeInAnimation {
@@ -206,4 +206,55 @@ footer{
 
 .flexbox-form-item1{
     min-height: 200px;
+}
+
+.image_container{
+    position: relative;
+    width: 1000px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.image_img{
+    display: block;
+    width: 100%;
+}
+
+.image_overlay{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s
+}
+
+.image_overlay:hover{
+    opacity: 1;
+}
+
+.image_overlay > *{
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+
+.image_overlay:hover > *{
+    transform: translateY(0px)
+}
+
+.image_title{
+    font-size:2em;
+    font-weight: bold;
+}
+
+.image_text{
+    font-size: 1.25em;
+    margin-top: 0.25em;
 }
