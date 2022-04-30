@@ -257,4 +257,6 @@ footer{
 .image_text{
     font-size: 1.25em;
     margin-top: 0.25em;
+    margin-right: 20px;
+    margin-left: 20px;
 }
