@@ -37,7 +37,7 @@
                         <label for="email">Email Address:</label><br>
                         <input type="text" name="email" id="email" required><br>
                         <label for="destination">Destination: </label><br>
-                        <input type="radio" id="destination" name="destination" value="Torquay">
+                        <input type="radio" id="destination" name="destination" value="Torquay" reqe>
                         <label for="destination">Torqauy</label><br>
                         <input type="radio" id="destination" name="destination" value="Eastbourne">
                         <label for="destination">Eastbourne</label><br>
@@ -45,18 +45,24 @@
                         <label for="destination">Cotswolds</label><br>
                         <input type="radio" id="destination" name="destination" value="Llandudno">
                         <label for="destination">Llandudno</label><br>
-                        <form action="#">  
-                            <label>Arrival <br/>
-                                <input type="date" name="arrival" value="Today"/>
-                            </label><br>
-                            
-                            <label>
-                                Departure <br/>
-                                <input type="date" name="departure" data-value="7" value="After one week"/>
-                                <br><br>
-                                <input type="submit" value="Submit">
-                            </label>
-                        </form>
+                        <label>Arrival <br/>
+                        <input type="date" name="arrival" value="Today" required/>
+                        </label><br>
+                        <label>Departure<br/>
+                        <input type="date" name="departure" data-value="7" value="After one week" required />
+                        <br><br>
+                        <label for="numberofchild">No. of Children:</label>
+                        <input type="number" id="numberofchild" name="numberofchild" min="0" max="100" value="0" required><br>
+                        <label for="numberofadult">No. of Adults:</label>
+                        <input type="number" id="numberofadult" name="numberofadult" min="1 " max="100" value="1" required>
+
+
+                        
+                        <br>
+                        <input type="submit" value="Submit">
+                        </label>
+                        
+                    </form>
                     <br>
                     <br>
                     <br>
