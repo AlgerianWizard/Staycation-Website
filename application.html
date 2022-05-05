@@ -15,7 +15,7 @@
                     <li><a href="destinations.html">Destinations</a></li>
                     <li><a href="about.html">About us</a></li>
                     <li><a href="contact.html">Contact</a></li>
-                    <li><a id="booknow" href="application.html">Book now</a></li>
+                    <li><a class="booknow" href="application.html">Book now</a></li>
                     </ul>
                 </nav>
             </header>
@@ -25,7 +25,7 @@
                     <h1>Application Form</h1>
                 </div>
 
-                <div style="margin-top: 10px;"class="middletext1">
+                <div style="margin-top: 10px;" class="middletext1">
                     <br>
                     <br>
                     <br>
@@ -36,8 +36,9 @@
                         <input type="text" name="lname" id="lname" required><br>
                         <label for="email">Email Address:</label><br>
                         <input type="text" name="email" id="email" required><br>
+
                         <label for="destination">Destination: </label><br>
-                        <input type="radio" id="destination" name="destination" value="Torquay" reqe>
+                        <input type="radio" id="destination" name="destination" value="Torquay" required>
                         <label for="destination">Torqauy</label><br>
                         <input type="radio" id="destination" name="destination" value="Eastbourne">
                         <label for="destination">Eastbourne</label><br>
@@ -45,21 +46,26 @@
                         <label for="destination">Cotswolds</label><br>
                         <input type="radio" id="destination" name="destination" value="Llandudno">
                         <label for="destination">Llandudno</label><br>
+                        
                         <label>Arrival <br/>
-                        <input type="date" name="arrival" value="Today" required/>
+                        <input type="date" name="arrival" value="" required/>
                         </label><br>
                         <label>Departure<br/>
-                        <input type="date" name="departure" data-value="7" value="After one week" required />
+                        <input type="date" name="departure" data-value="7" value="" required />
+                        </label>
                         <br><br>
+                        <label>
                         <label for="numberofchild">No. of Children:</label>
                         <input type="number" id="numberofchild" name="numberofchild" min="0" max="100" value="0" required><br>
+                        </label>
+
+                        <label>
                         <label for="numberofadult">No. of Adults:</label>
-                        <input type="number" id="numberofadult" name="numberofadult" min="1 " max="100" value="1" required>
-                        
+                        <input type="number" id="numberofadult1" name="numberofadult" min="1 " max="100" value="1" required>
                         <br>
+                        </label>
                         <input type="submit" value="Submit">
                         </label>
-                        
                     </form>
                     <br>
                     <br>
@@ -72,5 +78,6 @@
             <div><a href="/contact.html"><p>Contact us</p></a></div>
             <div><a href="/about.html"><p>About us</p></a></div>
         </footer>
-    </body>
+    </div>
+</body>
 </html>
